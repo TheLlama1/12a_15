@@ -1,0 +1,8 @@
+C:\Users\kosta\OneDrive\Desktop\programirane\C#\WebApplication1\WebApplication1\obj\Debug\net7.0\WebApplication1.csproj.AssemblyReference.cache
+C:\Users\kosta\OneDrive\Desktop\programirane\C#\WebApplication1\WebApplication1\obj\Debug\net7.0\WebApplication1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kosta\OneDrive\Desktop\programirane\C#\WebApplication1\WebApplication1\obj\Debug\net7.0\WebApplication1.AssemblyInfoInputs.cache
+C:\Users\kosta\OneDrive\Desktop\programirane\C#\WebApplication1\WebApplication1\obj\Debug\net7.0\WebApplication1.AssemblyInfo.cs
+C:\Users\kosta\OneDrive\Desktop\programirane\C#\WebApplication1\WebApplication1\obj\Debug\net7.0\WebApplication1.csproj.CoreCompileInputs.cache
+C:\Users\kosta\OneDrive\Desktop\programirane\C#\WebApplication1\WebApplication1\obj\Debug\net7.0\WebApplication1.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\kosta\OneDrive\Desktop\programirane\C#\WebApplication1\WebApplication1\obj\Debug\net7.0\WebApplication1.RazorAssemblyInfo.cache
+C:\Users\kosta\OneDrive\Desktop\programirane\C#\WebApplication1\WebApplication1\obj\Debug\net7.0\WebApplication1.RazorAssemblyInfo.cs
