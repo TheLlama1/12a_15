@@ -1,0 +1,43 @@
+﻿@model IEnumerable<BorrowLend.Models.Expense>
+
+<h2>Разходи</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Създай нов разход</a> <!-- Button to create a new expense -->
+</p>
+
+<div class="table-responsive"> <!-- Make the table responsive on smaller screens -->
+    <table class="table table-striped table-bordered"> <!-- Add Bootstrap classes for styling -->
+        <thead class="thead-dark"> <!-- Dark header for contrast -->
+            <tr>
+                <th>ID</th>
+                <th>Име на разхода</th>
+                <th>Сума</th>
+                <th>Действия</th> <!-- Action column -->
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.Any()) // Check if there are any expenses to display
+            {
+                foreach (var item in Model)
+                {
+                            <tr>
+                                <td>@item.ID</td>
+                                <td>@item.ExpenseName</td>
+                                <td>@item.Amount.ToString("C", System.Globalization.CultureInfo.CurrentCulture)</td> <!-- Format the amount as currency -->
+                                <td>
+                                    <a asp-action="Edit" asp-route-id="@item.ID" class="btn btn-warning btn-sm">Редактирай</a> <!-- Edit button -->
+                                    <a asp-action="Delete" asp-route-id="@item.ID" class="btn btn-danger btn-sm">Изтрий</a> <!-- Delete button -->
+                                </td>
+                            </tr>
+                }
+            }
+            else
+            {
+                    <tr>
+                        <td colspan="4" class="text-center">Няма налични разходи.</td> <!-- Message for no expenses -->
+                    </tr>
+            }
+        </tbody>
+    </table>
+</div>

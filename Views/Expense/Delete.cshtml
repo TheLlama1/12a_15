@@ -1,0 +1,24 @@
+﻿@model BorrowLend.Models.Expense
+
+<h2>Изтриване на разход</h2>
+
+<h3>Наистина ли искате да изтриете разхода "@Model.ExpenseName"?</h3>
+
+<div>
+    <h4>Разход</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">ID</dt>
+        <dd class="col-sm-10">@Model.ID</dd>
+        <dt class="col-sm-2">Име на разхода</dt>
+        <dd class="col-sm-10">@Model.ExpenseName</dd>
+        <dt class="col-sm-2">Сума</dt>
+        <dd class="col-sm-10">@Model.Amount</dd>
+    </dl>
+</div>
+
+<form asp-action="Delete" method="post"> <!-- POST method to delete -->
+    <input type="hidden" asp-for="ID" /> <!-- Hidden field for the ID -->
+    <input type="submit" value="Изтрий" class="btn btn-danger" /> <!-- Confirm deletion button -->
+    <a asp-action="Index" class="btn btn-secondary">Назад</a> <!-- Link to go back to index -->
+</form>
